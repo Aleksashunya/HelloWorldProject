@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf4-Fz-oFj">
-                                <rect key="frame" x="15" y="144" width="384" height="29"/>
+                                <rect key="frame" x="15" y="144" width="384" height="28.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
@@ -28,12 +28,15 @@
                                 <rect key="frame" x="163.66666666666666" y="435" width="87" height="36"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="BpF-rd-rhX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="BpF-rd-rhX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Show me!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedShowMeButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="3zl-kI-L0s"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,6 +49,10 @@
                             <constraint firstItem="5cu-Fg-eSa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="srT-GF-B9c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="Zf4-Fz-oFj" id="Ql5-z8-d6E"/>
+                        <outlet property="showMeButton" destination="5cu-Fg-eSa" id="Gja-1Y-tMn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
